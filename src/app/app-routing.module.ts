@@ -17,7 +17,7 @@ import { PopularBrandsComponent } from './layouts/popular-brands/popular-brands.
 import { ServicesComponent } from './layouts/services/services.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
-
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 // *******************************************************************************
@@ -26,7 +26,8 @@ import { SigninComponent } from './signin/signin.component';
 const routes: Routes = [
 
   { path: '', component: HomeComponent},
-  { path: 'login', component: SigninComponent}
+  { path: 'login', component: SigninComponent},
+  { path: 'product-list', component: ProductListComponent}
 ];
 
 // *******************************************************************************
