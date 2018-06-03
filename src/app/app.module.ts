@@ -11,6 +11,10 @@ import { AccountSettingsComponent } from './account/account-settings/account-set
 import { AccountOrdersComponent } from './account/account-orders/account-orders.component';
 import { AccountOffersComponent } from './account/account-offers/account-offers.component';
 import { AccountNavComponent } from './account/account-nav/account-nav.component';
+import { ProductItemComponent } from './product-item/product-item.component';
+import { ProductDetailsComponent } from './product-item/product-details/product-details.component';
+import { ProductReviewsComponent } from './product-item/product-reviews/product-reviews.component';
+import { ProductRelatedComponent } from './product-item/product-related/product-related.component';
 
 
 @NgModule({
@@ -24,7 +28,9 @@ import { AccountNavComponent } from './account/account-nav/account-nav.component
     FaqComponent, 
     AccountSettingsComponent, 
     AccountOrdersComponent, 
-    AccountOffersComponent, AccountNavComponent
+    AccountOffersComponent, 
+    AccountNavComponent, 
+    ProductItemComponent, ProductDetailsComponent, ProductReviewsComponent, ProductRelatedComponent
     ],
   imports: [
     BrowserModule,

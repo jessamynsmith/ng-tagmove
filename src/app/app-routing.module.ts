@@ -24,6 +24,8 @@ import { FaqComponent } from './faq/faq.component';
 import { AccountSettingsComponent } from './account/account-settings/account-settings.component';
 import { AccountOrdersComponent } from './account/account-orders/account-orders.component';
 import { AccountOffersComponent } from './account/account-offers/account-offers.component';
+import { ProductItemComponent } from './product-item/product-item.component';
+
 
 // *******************************************************************************
 // Routes
@@ -33,6 +35,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: SigninComponent},
   { path: 'product-list', component: ProductListComponent},
+  { path: 'product-item', component: ProductItemComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},
