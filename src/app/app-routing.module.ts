@@ -10,11 +10,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './layouts/header/header.component';
-import { SliderComponent } from './layouts/slider/slider.component';
-import { DealsComponent } from './layouts/deals/deals.component';
-import { FeaturedProductsComponent } from './layouts/featured-products/featured-products.component';
-import { PopularBrandsComponent } from './layouts/popular-brands/popular-brands.component';
-import { ServicesComponent } from './layouts/services/services.component';
+import { SliderComponent } from './home/slider/slider.component';
+import { DealsComponent } from './home/deals/deals.component';
+import { FeaturedProductsComponent } from './home/featured-products/featured-products.component';
+import { PopularBrandsComponent } from './home/popular-brands/popular-brands.component';
+import { PromisesComponent } from './home/promises/promises.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { SigninComponent } from './signin/signin.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -56,7 +56,7 @@ export const routingComponents = [
     DealsComponent,
     FeaturedProductsComponent,
     PopularBrandsComponent,
-    ServicesComponent,
+    PromisesComponent,
     FooterComponent
 ]
 

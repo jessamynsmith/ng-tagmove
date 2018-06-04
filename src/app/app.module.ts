@@ -18,6 +18,7 @@ import { ProductReviewsComponent } from './product-item/product-reviews/product-
 import { ProductRelatedComponent } from './product-item/product-related/product-related.component';
 import { ProductService } from './services/product.service';
 import { ProductListAltComponent } from './product-list-alt/product-list-alt.component';
+import { PromisesComponent } from './home/promises/promises.component';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { ProductListAltComponent } from './product-list-alt/product-list-alt.com
     ProductDetailsComponent, 
     ProductReviewsComponent, 
     ProductRelatedComponent, 
-    ProductListAltComponent
+    ProductListAltComponent, PromisesComponent
     ],
   imports: [
     BrowserModule,
