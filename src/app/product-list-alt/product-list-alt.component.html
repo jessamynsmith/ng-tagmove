@@ -1,0 +1,69 @@
+    <!-- Page Title-->
+    <div class="page-title">
+      <div class="container">
+        <div class="column">
+          <h1>Top Products</h1>
+        </div>
+        <div class="column">
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a>
+            </li>
+            <li class="separator">&nbsp;</li>
+            <li>Top Products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <div class="container padding-bottom-3x mb-1">
+      <!-- Shop Toolbar-->
+      <div class="shop-toolbar padding-bottom-1x mb-2">
+        <div class="column">
+          <div class="shop-sorting">
+            <label for="sorting">Sort by:</label>
+            <select class="form-control" id="sorting">
+              <option>Most Offers</option>
+            </select><span class="text-muted">Showing:&nbsp;</span><span>1 - 12 items</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="shop-view">
+              <a class="list-view" routerLink="/product-list"><span></span><span></span><span></span></a>
+            <a class="grid-view active" href="/product-list-alt"><span></span><span></span><span></span></a>
+          </div>
+        </div>
+      </div>
+      <!-- Products Grid-->
+      <div class="row">
+        <div *ngFor="let product of products">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="product-card mb-30">
+              <div class="product-badge bg-danger">Sale</div><a class="product-thumb" href="shop-single.html"><img src="{{product.img}}" alt="Product"></a>
+              <div class="product-card-body">
+                <div class="product-category"><a href="#">{{product.category}}</a></div>
+                <h3 class="product-title"><a href="shop-single.html">{{product.title}}</a></h3>
+                <h4 class="product-price">
+                  <del>{{product.rrpPrice}}</del>{{product.ourPrice}}
+                </h4>
+              </div>
+              <div class="product-button-group"><a class="product-button btn-wishlist" href="#"><i class="icon-heart"></i><span>Wishlist</span></a><a class="product-button btn-compare" href="#"><i class="icon-repeat"></i><span>Compare</span></a><a class="product-button" href="#" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-check-circle" data-toast-title="Product" data-toast-message="successfuly added to cart!"><i class="icon-shopping-cart"></i><span>To Cart</span></a></div>
+            </div>
+          </div>
+        </div><!--ngif-->
+      </div><!--row-->
+
+      <!-- Pagination-->
+      <nav class="pagination">
+        <div class="column">
+          <ul class="pages">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">12</a></li>
+          </ul>
+        </div>
+        <div class="column text-right hidden-xs-down"><a class="btn btn-outline-secondary btn-sm" href="#">Next&nbsp;<i class="icon-chevron-right"></i></a></div>
+      </nav>
+    </div>

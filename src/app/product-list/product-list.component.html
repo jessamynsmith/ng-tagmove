@@ -2,14 +2,14 @@
     <div class="page-title">
       <div class="container">
         <div class="column">
-          <h1>Shop List No Sidebar</h1>
+          <h1>Top Products</h1>
         </div>
         <div class="column">
           <ul class="breadcrumbs">
             <li><a href="index.html">Home</a>
             </li>
             <li class="separator">&nbsp;</li>
-            <li>Shop List No Sidebar</li>
+            <li>Top Products</li>
           </ul>
         </div>
       </div>
@@ -31,25 +31,25 @@
             </div>
             <div class="column">
               <div class="shop-view">
-                <a class="list-view active" href="shop-list-ns.html"><span></span><span></span><span></span></a>
-                <a class="grid-view" href="shop-grid-ns.html"><span></span><span></span><span></span></a>
+                <a class="list-view active" routerLink="/product-list"><span></span><span></span><span></span></a>
+                <a class="grid-view" routerLink="/product-list-alt"><span></span><span></span><span></span></a>
               </div>
             </div>
           </div>
           <!-- Products List-->
           <div *ngFor="let product of products">
             <div class="product-card product-list mb-30"><a class="product-thumb" routerLink="/product-item">
-              <div class="product-badge bg-danger">{{product.offers}} Offers</div><img src="assets/img/shop/products/01.jpg" alt="Product"></a>
+              <div class="product-badge bg-danger">{{product.offers}} Offers</div><img src="{{product.img}}" alt="Product"></a>
             <div class="product-card-inner">
               <div class="product-card-body">
-                <div class="product-category"><a href="#">{{product.category}}</a></div>
+                <div class="product-category">{{product.category}}</div>
                 <h3 class="product-title"><a routerLink="/product-item">{{product.title}}</a></h3>
   
                 <div class="block">
                   <h4 class="product-price">
                     <del>${{product.rrpPrice}}</del>${{product.ourPrice}}
                   </h4>
-                  <span class="price-sub-text">Our Price</span>
+                  <!-- <span class="price-sub-text">Our Price</span> -->
                 </div>
   
                   <p class="text-sm text-muted hidden-xs-down my-1">{{product.description}}</p>

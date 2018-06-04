@@ -17,6 +17,7 @@ import { ProductDetailsComponent } from './product-item/product-details/product-
 import { ProductReviewsComponent } from './product-item/product-reviews/product-reviews.component';
 import { ProductRelatedComponent } from './product-item/product-related/product-related.component';
 import { ProductService } from './services/product.service';
+import { ProductListAltComponent } from './product-list-alt/product-list-alt.component';
 
 
 @NgModule({
@@ -32,7 +33,11 @@ import { ProductService } from './services/product.service';
     AccountOrdersComponent, 
     AccountOffersComponent, 
     AccountNavComponent, 
-    ProductItemComponent, ProductDetailsComponent, ProductReviewsComponent, ProductRelatedComponent
+    ProductItemComponent, 
+    ProductDetailsComponent, 
+    ProductReviewsComponent, 
+    ProductRelatedComponent, 
+    ProductListAltComponent
     ],
   imports: [
     BrowserModule,
