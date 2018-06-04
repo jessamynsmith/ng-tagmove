@@ -19,6 +19,11 @@ import { ProductRelatedComponent } from './product-item/product-related/product-
 import { ProductService } from './services/product.service';
 import { ProductListAltComponent } from './product-list-alt/product-list-alt.component';
 import { PromisesComponent } from './home/promises/promises.component';
+import { AddressPageComponent } from './checkout/address-page/address-page.component';
+import { ShippingPageComponent } from './checkout/shipping-page/shipping-page.component';
+import { PaymentPageComponent } from './checkout/payment-page/payment-page.component';
+import { ReviewPageComponent } from './checkout/review-page/review-page.component';
+import { CompletePageComponent } from './checkout/complete-page/complete-page.component';
 
 
 @NgModule({
@@ -38,7 +43,13 @@ import { PromisesComponent } from './home/promises/promises.component';
     ProductDetailsComponent, 
     ProductReviewsComponent, 
     ProductRelatedComponent, 
-    ProductListAltComponent, PromisesComponent
+    ProductListAltComponent, 
+    PromisesComponent, 
+    AddressPageComponent, 
+    ShippingPageComponent, 
+    PaymentPageComponent, 
+    ReviewPageComponent, 
+    CompletePageComponent
     ],
   imports: [
     BrowserModule,
