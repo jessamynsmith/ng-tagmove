@@ -6,13 +6,13 @@
           </div>
           <div class="column">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Home</a>
+              <li><a routerLink="/">Home</a>
               </li>
               <li class="separator">&nbsp;</li>
-              <li><a href="/product-list">Top Products</a>
+              <li><a routerLink="/product-list">Top Products</a>
               </li>
               <li class="separator">&nbsp;</li>
-              <li>Single Product</li>
+              <li>Single product</li>
             </ul>
           </div>
         </div>
@@ -94,10 +94,9 @@
             </div>
           </div>
         </div>
-
-        <app-product-details [product]="product"></app-product-details>
       </div>
 
+      <app-product-details [product]="product"></app-product-details>
 
       <app-product-related></app-product-related>
       
