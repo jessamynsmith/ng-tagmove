@@ -41,7 +41,7 @@ const routes: Routes = [
   { path: 'login', component: SigninComponent},
   { path: 'product-list', component: ProductListComponent},
   { path: 'product-list-alt', component: ProductListAltComponent},
-  { path: 'product-item', component: ProductItemComponent},
+  { path: 'product-item/:id', component: ProductItemComponent},
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'faq', component: FaqComponent},

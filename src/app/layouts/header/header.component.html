@@ -2,7 +2,7 @@
     <!-- Topbar-->
     <div class="topbar d-flex justify-content-between">
       <!-- Logo-->
-      <div class="site-branding d-flex"><a class="site-logo align-self-center" href="index.html"><img src="assets/img/logo/logo.png" alt="Unishop"></a></div>
+      <div class="site-branding d-flex"><a class="site-logo align-self-center" routerLink="/"><img src="assets/img/logo/logo.png" alt="Unishop"></a></div>
       <!-- Search / Categories-->
       <div class="search-box-wrap d-flex">
         <div class="search-box-inner align-self-center">
@@ -116,9 +116,9 @@
         <!-- Slideable (Mobile) Menu-->
         <nav class="slideable-menu">
           <ul class="menu" data-initial-height="385">
-            <li class="has-children active"><span><a href="index.html">Home</a><span class="sub-menu-toggle"></span></span>
+            <li class="has-children active"><span><a routerLink="/">Home</a><span class="sub-menu-toggle"></span></span>
               <ul class="slideable-submenu">
-                  <li class="active"><a href="index.html">Hero Slider</a></li>
+                  <li class="active"><a routerLink="/">Hero Slider</a></li>
                   <li><a href="home-featured-categories.html">Categories Grid</a></li>
               </ul>
             </li>
@@ -154,15 +154,15 @@
       <!-- Main Navigation-->
       <nav class="site-menu">
         <ul>
-          <li class="has-submenu active"><a href="index.html">Home</a></li>
+          <li class="has-submenu"><a routerLinkActive="active" routerLink="/">Home</a></li>
 
-          <li class="has-submenu"><a routerLink="/product-list">Products</a></li>
+          <li class="has-submenu"><a routerLinkActive="active" routerLink="/product-list">Products</a></li>
 
-          <li class="has-megamenu"><a routerLink="/about">About</a></li>
+          <li class="has-submenu"><a routerLinkActive="active" routerLink="/about">About</a></li>
 
-          <li class="has-submenu"><a routerLink="/contact">Contact</a></li>
+          <li class="has-submenu"><a routerLinkActive="active" routerLink="/contact">Contact</a></li>
 
-          <li class="has-submenu"><a routerLink="/faq">FAQ</a></li>
+          <li class="has-submenu"><a routerLinkActive="active" routerLink="/faq">FAQ</a></li>
         </ul>
       </nav>
 

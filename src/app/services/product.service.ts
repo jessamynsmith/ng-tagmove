@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+import { Product } from '../models/product';
 
 @Injectable()
 export class ProductService {
@@ -12,7 +14,7 @@ export class ProductService {
     return this._http.get(`${this.baseUrl}/products`)
   }
 
-  // getProductDetails(): any {
-  //   return this._http.get(`${this.baseUrl}/product/{id}`)
-  // }
+  getProductDetails(id): any {
+    return this._http.get(`${this.baseUrl}/product/${id}`)
+  }
 }

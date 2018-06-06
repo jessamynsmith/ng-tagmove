@@ -38,12 +38,12 @@
           </div>
           <!-- Products List-->
           <div *ngFor="let product of products">
-            <div class="product-card product-list mb-30"><a class="product-thumb" routerLink="/product-item">
+            <div class="product-card product-list mb-30"><a class="product-thumb" [routerLink]="['/product-item/', product.id]">
               <div class="product-badge bg-danger">{{product.offers}} Offers</div><img src="{{product.img}}" alt="Product"></a>
             <div class="product-card-inner">
               <div class="product-card-body">
                 <div class="product-category">{{product.category}}</div>
-                <h3 class="product-title"><a routerLink="/product-item">{{product.title}}</a></h3>
+                <h3 class="product-title"><a [routerLink]="['/product-item/', product.id]">{{product.title}}</a></h3>
   
                 <div class="block">
                   <h4 class="product-price">

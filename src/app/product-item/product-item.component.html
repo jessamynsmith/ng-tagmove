@@ -18,7 +18,7 @@
         </div>
       </div>
       <!-- Page Content-->
-      <div class="container padding-bottom-3x">
+      <div class="container padding-bottom-3x" *ngIf="product">
         <div class="row">
           <!-- Poduct Gallery-->
           <div class="col-md-6">
@@ -43,10 +43,10 @@
             </div>
           </div>
           <!-- Product Info-->
-          <div class="col-md-6">
+          <div class="col-md-6" >
             <div class="padding-top-2x mt-2 hidden-md-up"></div>
             <div class="sp-categories pb-3"><i class="icon-tag"></i><a href="#">Drones,</a><a href="#">Action cameras</a></div>
-            <h2 class="mb-3">GoPro Karma Camera Drone</h2><span class="h3 d-block">
+            <h2 class="mb-3">{{product.title}}</h2><span class="h3 d-block">
               <del class="text-muted">$958.00</del>&nbsp; $899.00</span>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptatibus quos ea dolore rem, molestias laudantium et explicabo... <a routerLink='#details' class='scroll-to'>More info</a></p>
             <div class="row margin-top-1x">
@@ -80,15 +80,13 @@
               </div>
               <div class="col-sm-8">
                 <div class="pt-4 hidden-sm-up"></div>
-                <button class="btn btn-primary btn-block m-0" routerLink="/address-page" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-check-circle" data-toast-title="Product" data-toast-message="Offer Successful!"><i class="icon-bag"></i>Make Offer</button>
+                <button class="btn btn-primary btn-block m-0" routerLink="#" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-check-circle" data-toast-title="Product" data-toast-message="Offer Successful!"><i class="icon-bag"></i>Make Offer</button>
               </div>
             </div>
             <div class="pt-1 mb-4"><span class="text-medium">SKU:</span> #21457832</div>
             <hr class="mb-2">
             <div class="d-flex flex-wrap justify-content-between">
               <div class="mt-2 mb-2">
-                <button class="btn btn-outline-secondary btn-sm btn-wishlist"><i class="icon-heart"></i>&nbsp;To Wishlist</button>
-                <button class="btn btn-outline-secondary btn-sm btn-compare"><i class="icon-repeat"></i>&nbsp;Compare</button>
               </div>
               <div class="mt-2 mb-2"><span class="text-muted">Share:&nbsp;&nbsp;</span>
                 <div class="d-inline-block"><a class="social-button shape-rounded sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button shape-rounded sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="socicon-twitter"></i></a><a class="social-button shape-rounded sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a><a class="social-button shape-rounded sb-google-plus" href="#" data-toggle="tooltip" data-placement="top" title="Google +"><i class="socicon-googleplus"></i></a></div>
@@ -96,9 +94,10 @@
             </div>
           </div>
         </div>
+
+        <app-product-details [product]="product"></app-product-details>
       </div>
 
-      <app-product-details></app-product-details>
 
       <app-product-related></app-product-related>
       
