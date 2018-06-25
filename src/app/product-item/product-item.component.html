@@ -26,19 +26,28 @@
               <div class="gallery-wrapper">
                 <div class="gallery-item video-btn text-center"><a href="#" data-toggle="tooltip" data-type="video" data-video="&lt;div class=&quot;wrapper&quot;&gt;&lt;div class=&quot;video-wrapper&quot;&gt;&lt;iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;https://www.youtube.com/embed/CjNjcrQZtd8&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;" title="Watch video"></a></div>
               </div><span class="product-badge bg-danger">Sale</span>
-              <div class="product-carousel owl-carousel gallery-wrapper">
+              <owl-carousel
+                [options]="{items: 1, dots: false, navigation: false, loop: true, URLhashListener: true}"
+                [carouselClasses]="['owl-theme', 'row', 'sliding', 'product-carousel', 'owl-carousel', 'gallery-wrapper']">
+                  <div class="gallery-item" data-hash="one"><a href="assets/img/shop/single/01.jpg" data-size="1000x667"><img src="assets/img/shop/single/01.jpg" alt="Product"></a></div>
+                  <div class="gallery-item" data-hash="two"><a href="assets/img/shop/single/02.jpg" data-size="1000x667"><img src="assets/img/shop/single/02.jpg" alt="Product"></a></div>
+                  <div class="gallery-item" data-hash="three"><a href="assets/img/shop/single/03.jpg" data-size="1000x667"><img src="assets/img/shop/single/03.jpg" alt="Product"></a></div>
+                  <div class="gallery-item" data-hash="four"><a href="assets/img/shop/single/04.jpg" data-size="1000x667"><img src="assets/img/shop/single/04.jpg" alt="Product"></a></div>
+                  <div class="gallery-item" data-hash="five"><a href="assets/img/shop/single/05.jpg" data-size="1000x667"><img src="assets/img/shop/single/05.jpg" alt="Product"></a></div>
+              </owl-carousel>
+              <!--<div class="product-carousel owl-carousel gallery-wrapper">
                 <div class="gallery-item" data-hash="one"><a href="assets/img/shop/single/01.jpg" data-size="1000x667"><img src="assets/img/shop/single/01.jpg" alt="Product"></a></div>
                 <div class="gallery-item" data-hash="two"><a href="assets/img/shop/single/02.jpg" data-size="1000x667"><img src="assets/img/shop/single/02.jpg" alt="Product"></a></div>
                 <div class="gallery-item" data-hash="three"><a href="assets/img/shop/single/03.jpg" data-size="1000x667"><img src="assets/img/shop/single/03.jpg" alt="Product"></a></div>
                 <div class="gallery-item" data-hash="four"><a href="assets/img/shop/single/04.jpg" data-size="1000x667"><img src="assets/img/shop/single/04.jpg" alt="Product"></a></div>
                 <div class="gallery-item" data-hash="five"><a href="assets/img/shop/single/05.jpg" data-size="1000x667"><img src="assets/img/shop/single/05.jpg" alt="Product"></a></div>
-              </div>
+              </div>-->
               <ul class="product-thumbnails">
-                <li class="active"><a href="#one"><img src="assets/img/shop/single/th01.jpg" alt="Product"></a></li>
-                <li><a href="#two"><img src="assets/img/shop/single/th02.jpg" alt="Product"></a></li>
-                <li><a href="#three"><img src="assets/img/shop/single/th03.jpg" alt="Product"></a></li>
-                <li><a href="#four"><img src="assets/img/shop/single/th04.jpg" alt="Product"></a></li>
-                <li><a href="#five"><img src="assets/img/shop/single/th05.jpg" alt="Product"></a></li>
+                <li class="active"><a routerLink="./" fragment="one"><img src="assets/img/shop/single/th01.jpg" alt="Product"></a></li>
+                <li><a routerLink="./" fragment="two"><img src="assets/img/shop/single/th02.jpg" alt="Product"></a></li>
+                <li><a routerLink="./" fragment="three"><img src="assets/img/shop/single/th03.jpg" alt="Product"></a></li>
+                <li><a routerLink="./" fragment="four"><img src="assets/img/shop/single/th04.jpg" alt="Product"></a></li>
+                <li><a routerLink="./" fragment="five"><img src="assets/img/shop/single/th05.jpg" alt="Product"></a></li>
               </ul>
             </div>
           </div>

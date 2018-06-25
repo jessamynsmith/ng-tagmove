@@ -1,0 +1,8 @@
+.site-menu ul li {
+    cursor: pointer;
+    outline: none
+}
+
+.site-menu ul li:active {
+    outline: none
+}
