@@ -59,23 +59,11 @@
               <del class="text-muted">£{{product.price}}</del>&nbsp; £{{product.discountPrice}}</span>
             <p class="text-muted">{{product.description}}<a routerLink='#details' class='scroll-to'>More info</a></p>
             <div class="row margin-top-1x">
-              <div class="col-sm-6">
+              <div *ngFor="let eachOption of product.options" class="col-sm-6">
                 <div class="form-group">
-                  <label for="size">Choose {{product.options.groupname}}</label>
+                  <label for="size">Choose {{eachOption.group}}</label>
                   <select class="form-control" id="size">
-                    <option>White/Gray/Black</option>
-                    <option>Black</option>
-                    <option>Black/White/Red</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="color">Battery capacity</label>
-                  <select class="form-control" id="color">
-                    <option>5100 mAh</option>
-                    <option>6200 mAh</option>
-                    <option>8000 mAh</option>
+                    <option>{{eachOption.name}}</option>
                   </select>
                 </div>
               </div>
