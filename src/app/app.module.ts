@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { SigninComponent } from './signin/signin.component';
@@ -52,10 +53,12 @@ import { OwlModule } from 'ngx-owl-carousel';
     CompletePageComponent
     ],
   imports: [
+    OwlModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    OwlModule
+    ReactiveFormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

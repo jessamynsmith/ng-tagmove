@@ -7,21 +7,22 @@
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
               <h3 class="h4">Features</h3>
               <ul class="list-icon mb-4">
-                <li><i class="icon-check text-success"></i>Capture 4K30 Video and 12MP Photos</li>
-                <li><i class="icon-check text-success"></i>Game-Style Controller with Touchscreen</li>
+                <li *ngFor="let feature of product.features"><i class="icon-check text-success"></i>{{feature}}</li>
+                <!--<li><i class="icon-check text-success"></i>Game-Style Controller with Touchscreen</li>
                 <li><i class="icon-check text-success"></i>View Live Camera Feed</li>
                 <li><i class="icon-check text-success"></i>Full Control of HERO6 Black</li>
-                <li><i class="icon-check text-success"></i>Use App for Dedicated Camera Operation</li>
+                <li><i class="icon-check text-success"></i>Use App for Dedicated Camera Operation</li>-->
               </ul>
             </div>
             <div class="col-md-6">
               <h3 class="h4">Specifications</h3>
               <ul class="list-unstyled mb-4">
-                <li><strong>Weight:</strong> 35.5oz (1006g)</li>
+                <li *ngFor="let eachSpec of product.spec"><strong>{{eachSpec.name}}:</strong> {{eachSpec.value}}</li>
+                <!--<li><strong>Weight:</strong> 35.5oz (1006g)</li>
                 <li><strong>Maximum Speed:</strong> 	35 mph (15 m/s)</li>
                 <li><strong>Maximum Distance:</strong> 	Up to 9,840ft (3,000m)</li>
                 <li><strong>Operating Frequency:</strong> 2.4GHz</li>
-                <li><strong>Manufacturer:</strong> GoPro, USA</li>
+                <li><strong>Manufacturer:</strong> GoPro, USA</li>-->
               </ul>
               <h3 class="h4">Shipping Options:</h3>
               <ul class="list-unstyled mb-4">

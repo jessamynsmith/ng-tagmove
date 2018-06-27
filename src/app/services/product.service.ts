@@ -17,4 +17,8 @@ export class ProductService {
   getProductDetails(id): any {
     return this._http.get(`${this.baseUrl}/product/${id}`)
   }
+
+  makeOffer(offerDetails): any {
+    return this._http.post(`${this.baseUrl}/offer`, offerDetails);
+  }
 }

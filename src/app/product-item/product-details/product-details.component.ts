@@ -7,11 +7,13 @@ import { Product } from '../../models/product';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  @Input('product') product: Product
+  @Input('product') product: Product;
+  
 
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
