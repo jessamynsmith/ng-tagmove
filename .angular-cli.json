@@ -23,8 +23,7 @@
         "../node_modules/owl.carousel/dist/assets/owl.carousel.css",
         "../node_modules/owl.carousel/dist/assets/owl.theme.default.css"
       ],
-      "scripts": ["assets/js/vendor.min.js", "assets/js/scripts.min.js","../node_modules/jquery/dist/jquery.js",
-        "../node_modules/owl.carousel/dist/owl.carousel.js"],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

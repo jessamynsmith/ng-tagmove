@@ -51,33 +51,11 @@
             <li><a href="#"><i class="flag-icon"><img src="assets/img/flags/IT.png" alt="Italiano"></i>&nbsp;Italiano</a></li>
           </ul>
         </div>
-        <div class="toolbar-item hidden-on-mobile"><a href="product-comparison.html">
-            <div><span class="compare-icon"><i class="icon-repeat"></i><span class="count-label">3</span></span><span class="text-label">Compare</span></div></a></div>
-        <div class="toolbar-item hidden-on-mobile"><a routerLink="/login">
+        <div class="toolbar-item"><a routerLink="/login">
             <div><i class="icon-user"></i><span class="text-label">Sign In / Up</span></div></a>
-          <div class="toolbar-dropdown text-center px-3">
+          <div class="toolbar-dropdown hidden-on-mobile text-center px-3">
             <p class="text-xs mb-3 pt-2">Sign in to your account or register new one to have full control over your orders, receive bonuses and more.</p><a class="btn btn-primary btn-sm btn-block" routerLink="/login">Sign In</a>
             <p class="text-xs text-muted mb-2">New customer?&nbsp;<a routerLink="/login">Register</a></p>
-          </div>
-        </div>
-        <div class="toolbar-item"><a href="cart.html">
-            <div><span class="cart-icon"><i class="icon-shopping-cart"></i><span class="count-label">3   </span></span><span class="text-label">Cart</span></div></a>
-          <div class="toolbar-dropdown cart-dropdown widget-cart hidden-on-mobile">
-            <!-- Entry-->
-            <div class="entry">
-              <div class="entry-thumb"><a routerLink="/product-item"><img src="assets/img/shop/widget/04.jpg" alt="Product"></a></div>
-              <div class="entry-content">
-                <h4 class="entry-title"><a routerLink="/product-item">Canon EOS M50 Mirrorless Camera</a></h4><span class="entry-meta">1 x $910.00</span>
-              </div>
-              <div class="entry-delete"><i class="icon-x"></i></div>
-            </div>
-            <div class="text-right">
-              <p class="text-gray-dark py-2 mb-0"><span class='text-muted'>Subtotal:</span> &nbsp;$2,548.50</p>
-            </div>
-            <div class="d-flex">
-              <div class="pr-2 w-50"><a class="btn btn-secondary btn-sm btn-block mb-0" href="cart.html">Expand Cart</a></div>
-              <div class="pl-2 w-50"><a class="btn btn-primary btn-sm btn-block mb-0" href="checkout.html">Checkout</a></div>
-            </div>
           </div>
         </div>
       </div>
@@ -90,42 +68,14 @@
             <input class="form-control" type="search" placeholder="Search site">
           </form>
         </div>
-        <!-- Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-item"><a href="#">
-              <div><i class="flag-icon"><img src="assets/img/flags/EN.png" alt="English"></i><span class="text-label">Eng / Usd</span></div></a>
-            <ul class="toolbar-dropdown lang-dropdown w-100">
-              <li class="px-3 pt-1 pb-2">
-                <select class="form-control form-control-sm">
-                  <option value="usd">$ USD</option>
-                  <option value="usd">€ EUR</option>
-                  <option value="usd">£ UKP</option>
-                  <option value="usd">¥ JPY</option>
-                </select>
-              </li>
-              <li><a href="#"><i class="flag-icon"><img src="assets/img/flags/FR.png" alt="Français"></i>&nbsp;Français</a></li>
-              <li><a href="#"><i class="flag-icon"><img src="assets/img/flags/DE.png" alt="Deutsch"></i>&nbsp;Deutsch</a></li>
-              <li><a href="#"><i class="flag-icon"><img src="assets/img/flags/IT.png" alt="Italiano"></i>&nbsp;Italiano</a></li>
-            </ul>
-          </div>
-          <div class="toolbar-item"><a href="product-comparison.html">
-              <div><span class="compare-icon"><i class="icon-repeat"></i><span class="count-label">3</span></span><span class="text-label">Compare</span></div></a></div>
-          <div class="toolbar-item"><a routerLink="/login">
-              <div><i class="icon-user"></i><span class="text-label">Sign In / Up</span></div></a></div>
-        </div>
         <!-- Slideable (Mobile) Menu-->
         <nav class="slideable-menu">
           <ul class="menu" data-initial-height="385">
-            <li class="has-children active"><span><a routerLink="/">Home</a><span class="sub-menu-toggle"></span></span>
-              <ul class="slideable-submenu">
-                  <li class="active"><a routerLink="/">Hero Slider</a></li>
-                  <li><a href="home-featured-categories.html">Categories Grid</a></li>
-              </ul>
-            </li>
-            <li class="has-children"><span><a routerLink="/product-list">Products</a><span class="sub-menu-toggle"></span></span></li>
-            <li class="has-children"><span><a routerLink="/about">About</a><span class="sub-menu-toggle"></span></span></li>
-            <li class="has-children"><span><a routerLink="/contact">Contact</a><span class="sub-menu-toggle"></span></span></li>
-            <li class="has-children"><span><a routerLink="/faq">FAQ</a><span class="sub-menu-toggle"></span></span></li>
+            <li><span><a routerLink="/">Home</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/product-list">Products</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/about">About</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/contact">Contact</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/faq">FAQ</a><span class="sub-menu-toggle"></span></span></li>
           </ul>
         </nav>
       </div>
