@@ -29,48 +29,20 @@
             <table class="table table-hover mb-0">
               <thead>
                 <tr>
-                  <th>Order #</th>
-                  <th>Date Purchased</th>
+                  <th>Order ID</th>
+                  <th>Product</th>
                   <th>Status</th>
-                  <th>Total</th>
+                  <th>Time</th>
+                  <th>Price</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody *ngFor="let offer of offers">
                 <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">78A643CD409</a></td>
-                  <td>August 08, 2017</td>
-                  <td><span class="text-danger">Canceled</span></td>
-                  <td><span>$760.50</span></td>
-                </tr>
-                <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">34VB5540K83</a></td>
-                  <td>July 21, 2017</td>
-                  <td><span class="text-info">In Progress</span></td>
-                  <td>$315.20</td>
-                </tr>
-                <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">112P45A90V2</a></td>
-                  <td>June 15, 2017</td>
-                  <td><span class="text-warning">Delayed</span></td>
-                  <td>$1,264.00</td>
-                </tr>
-                <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">28BA67U0981</a></td>
-                  <td>May 19, 2017</td>
-                  <td><span class="text-success">Delivered</span></td>
-                  <td>$198.35</td>
-                </tr>
-                <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">502TR872W2</a></td>
-                  <td>April 04, 2017</td>
-                  <td><span class="text-success">Delivered</span></td>
-                  <td>$2,133.90</td>
-                </tr>
-                <tr>
-                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">47H76G09F33</a></td>
-                  <td>March 30, 2017</td>
-                  <td><span class="text-success">Delivered</span></td>
-                  <td>$86.40</td>
+                  <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">{{offer.offerID}}</a></td>
+                  <td>{{offer.productName}}</td>
+                  <td><span class="text-danger">{{offer.status}}</span></td>
+                  <td>{{offer.timestamp}}</td>
+                  <td><span>{{offer.amount}}</span></td>
                 </tr>
               </tbody>
             </table>

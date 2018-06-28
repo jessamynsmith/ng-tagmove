@@ -1,0 +1,6 @@
+/*
+Fix for button overlap
+*/
+.btn {
+    margin-bottom: 9px;
+}

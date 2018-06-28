@@ -21,4 +21,8 @@ export class ProductService {
   makeOffer(offerDetails): any {
     return this._http.post(`${this.baseUrl}/offer`, offerDetails);
   }
+
+  getOffers(buyerDetails): any {
+    return this._http.post(`${this.baseUrl}/m/offers`, buyerDetails);
+  }
 }
