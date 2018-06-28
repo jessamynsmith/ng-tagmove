@@ -33,8 +33,8 @@
       </div>
       <!-- Toolbar-->
       <div class="toolbar d-flex">
-        <div class="toolbar-item visible-on-mobile mobile-menu-toggle"><a href="#">
-            <div><i class="icon-menu"></i><span class="text-label">Menu</span></div></a></div>
+        <div class="toolbar-item visible-on-mobile mobile-menu-toggle"><a href="#"> <!-- here is active -->
+            <div><i id="icon-menu-toggle" class="icon-menu"></i><span class="text-label">Menu</span></div></a></div> <!-- here is icon-x -->
         <div class="toolbar-item"><a routerLink="/login">
             <div><i class="icon-user"></i><span class="text-label">Sign In / Up</span></div></a>
           <div class="toolbar-dropdown hidden-on-mobile text-center px-3">
@@ -44,7 +44,7 @@
         </div>
       </div>
       <!-- Mobile Menu-->
-      <div class="mobile-menu">
+      <div class="mobile-menu"> <!-- here is open -->
         <!-- Search Box-->
         <div class="mobile-search">
           <form class="input-group" method="get"><span class="input-group-btn">
@@ -53,13 +53,13 @@
           </form>
         </div>
         <!-- Slideable (Mobile) Menu-->
-        <nav class="slideable-menu">
-          <ul class="menu mobile-menu-toggle" data-initial-height="385">
-            <li><span><a routerLink="/">Home</a><span class="mobile-menu-toggle"></span></span></li>
-            <li routerLinkActive="active"><span><a routerLink="/product-list">Products</a><span class="mobile-menu-toggle"></span></span></li>
-            <li routerLinkActive="active"><span><a routerLink="/about">About</a><span class="mobile-menu-toggle"></span></span></li>
-            <li routerLinkActive="active"><span><a routerLink="/contact">Contact</a><span class="mobile-menu-toggle"></span></span></li>
-            <li routerLinkActive="active"><span><a routerLink="/faq">FAQ</a><span class="mobile-menu-toggle"></span></span></li>
+        <nav class="slideable-menu mobile-menu-tog">
+          <ul class="menu" data-initial-height="385">
+            <li><span><a routerLink="/">Home</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/product-list">Products</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/about">About</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/contact">Contact</a><span class="sub-menu-toggle"></span></span></li>
+            <li routerLinkActive="active"><span><a routerLink="/faq">FAQ</a><span class="sub-menu-toggle"></span></span></li>
           </ul>
         </nav>
       </div>
