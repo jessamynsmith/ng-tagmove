@@ -6287,7 +6287,7 @@ video {
 }
 
 .site-header .toolbar .toolbar-item:hover, .site-header .toolbar .toolbar-item.active {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .site-header .toolbar .toolbar-item:hover > .toolbar-dropdown, .site-header .toolbar .toolbar-item.active > .toolbar-dropdown {
