@@ -8,15 +8,16 @@ import { Offer } from '../../models/offer';
   styleUrls: ['./account-offers.component.css']
 })
 export class AccountOffersComponent implements OnInit {
-offer: Offer;
+offers: Offer;
 
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
     var requestObj = {buyerID:"1234", status:"open"}
-    var jsonRequest = JSON.stringify(requestObj);
+    var requestJson = JSON.stringify(requestObj);
 
-    this.productService.getOffers(jsonRequest).subscribe(offer => this.offer = offer)
+    this.productService.getOffers(requestJson)
+    .subscribe(offers => this.offers = offers)
   }
 
 }
