@@ -24,6 +24,7 @@ import { FaqComponent } from './faq/faq.component';
 import { AccountSettingsComponent } from './account/account-settings/account-settings.component';
 import { AccountOrdersComponent } from './account/account-orders/account-orders.component';
 import { AccountOffersComponent } from './account/account-offers/account-offers.component';
+import { AccountResetComponent } from './account/account-reset/account-reset.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductListAltComponent } from './product-list-alt/product-list-alt.component';
 import { AddressPageComponent } from './checkout/address-page/address-page.component';
@@ -32,6 +33,7 @@ import { PaymentPageComponent } from './checkout/payment-page/payment-page.compo
 import { ReviewPageComponent } from './checkout/review-page/review-page.component';
 import { CompletePageComponent } from './checkout/complete-page/complete-page.component';
 import { Four04Component } from './four04/four04.component';
+import { TrackingComponent } from './account/tracking/tracking.component';
 
 
 // *******************************************************************************
@@ -51,11 +53,13 @@ const routes: Routes = [
   { path: 'account-orders', component: AccountOrdersComponent},
   { path: 'account-offers', component: AccountOffersComponent},
   { path: 'account-settings', component: AccountSettingsComponent},
+  { path: 'account-reset', component: AccountResetComponent},
   { path: 'address-page', component: AddressPageComponent},
   { path: 'shipping-page', component: ShippingPageComponent},
   { path: 'payment-page', component: PaymentPageComponent},
   { path: 'review-page', component: ReviewPageComponent},
   { path: 'complete-page', component: CompletePageComponent},
+  { path: 'track', component: TrackingComponent},
 
   { path: '**', component: Four04Component}
 ];

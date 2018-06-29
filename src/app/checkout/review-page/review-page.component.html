@@ -19,10 +19,10 @@
         <div class="row">
           <!-- Checkout Adress-->
           <div class="col-xl-9 col-lg-8">
-            <div class="steps flex-sm-nowrap mb-5"><a class="step" href="checkout-address.html">
-                <h4 class="step-title"><i class="icon-check-circle"></i>1. Address</h4></a><a class="step" href="checkout-shipping.html">
-                <h4 class="step-title"><i class="icon-check-circle"></i>2. Shipping</h4></a><a class="step" href="checkout-payment.html">
-                <h4 class="step-title"><i class="icon-check-circle"></i>3. Payment</h4></a><a class="step active" href="checkout-review.html">
+            <div class="steps flex-sm-nowrap mb-5"><a class="step" routerLink="/address-page">
+                <h4 class="step-title"><i class="icon-check-circle"></i>1. Address</h4></a><a class="step" routerLink="/shipping-page">
+                <h4 class="step-title"><i class="icon-check-circle"></i>2. Shipping</h4></a><a class="step" routerLink="/payment-page">
+                <h4 class="step-title"><i class="icon-check-circle"></i>3. Payment</h4></a><a class="step active">
                 <h4 class="step-title">4. Review</h4></a></div>
             <h4 class="padding-bottom-1x">Review Your Order</h4>
             <div class="table-responsive shopping-cart">
@@ -37,7 +37,7 @@
                 <tbody>
                   <tr>
                     <td>
-                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/01.jpg" alt="Product"></a>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="assets/img/shop/cart/01.jpg" alt="Product"></a>
                         <div class="product-info">
                           <h4 class="product-title"><a href="shop-single.html">Canon EOS M50 Mirrorless Camera<small>x 1</small></a></h4><span><em>Type:</em> Mirrorless</span><span><em>Color:</em> Black</span>
                         </div>
@@ -48,7 +48,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/02.jpg" alt="Product"></a>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="assets/img/shop/cart/02.jpg" alt="Product"></a>
                         <div class="product-info">
                           <h4 class="product-title"><a href="shop-single.html">Apple iPhone X 256 GB Space Gray<small>x 1</small></a></h4><span><em>Memory:</em> 256 GB</span><span><em>Color:</em> Space Gray</span>
                         </div>
@@ -59,7 +59,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="img/shop/cart/03.jpg" alt="Product"></a>
+                      <div class="product-item"><a class="product-thumb" href="shop-single.html"><img src="assets/img/shop/cart/03.jpg" alt="Product"></a>
                         <div class="product-info">
                           <h4 class="product-title"><a href="shop-single.html">HP LaserJet Pro Laser Printer<small>x 1</small></a></h4><span><em>Type:</em> Laser</span><span><em>Color:</em> White</span>
                         </div>
@@ -91,7 +91,10 @@
                 </ul>
               </div>
             </div>
-            <div class="d-flex justify-content-between paddin-top-1x mt-4"><a class="btn btn-outline-secondary" href="checkout-payment.html"><i class="icon-arrow-left"></i><span class="hidden-xs-down">&nbsp;Back</span></a><a class="btn btn-primary" href="checkout-complete.html">Complete Order</a></div>
+            <div class="d-flex justify-content-between paddin-top-1x mt-4">
+              <a class="btn btn-outline-secondary" routerLink="/payment-page"><i class="icon-arrow-left"></i><span class="hidden-xs-down">&nbsp;Back</span></a>
+              <a class="btn btn-primary" routerLink="/complete-page">Complete Order</a>
+            </div>
           </div>
           <!-- Sidebar          -->
           <div class="col-xl-3 col-lg-4">
@@ -124,28 +127,28 @@
                 <h3 class="widget-title">Recently Viewed</h3>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/01.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/01.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">GoPro Hero4 Silver</a></h4><span class="entry-meta">$287.99</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/02.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/02.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">Puro Sound Labs BT2200</a></h4><span class="entry-meta">$95.99</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/03.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/03.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">HP OfficeJet Pro 8710</a></h4><span class="entry-meta">$89.70</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry pb-2">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/05.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/05.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">iPhone X 256 GB Space Gray</a></h4><span class="entry-meta">$1,450.00</span>
                   </div>
@@ -155,7 +158,7 @@
                 <div class="card-body"><span class="d-block text-lg text-thin mb-2">Limited Time Deals</span>
                   <h3>Surface Pro 4</h3>
                   <p class="d-inline-block bg-warning text-white">&nbsp;&nbsp;Shop Now&nbsp;<i class="icon-chevron-right d-inline-block align-middle"></i>&nbsp;</p>
-                </div><img class="d-block mx-auto" src="img/shop/widget/promo.jpg" alt="Surface Pro"></a>
+                </div><img class="d-block mx-auto" src="assets/img/shop/widget/promo.jpg" alt="Surface Pro"></a>
             </aside>
           </div>
         </div>

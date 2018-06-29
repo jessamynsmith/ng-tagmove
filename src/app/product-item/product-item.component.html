@@ -57,7 +57,7 @@
             <div class="sp-categories pb-3"><i class="icon-tag"></i><a href="#">Drones,</a><a href="#">Action cameras</a></div>
             <h2 class="mb-3">{{product.title}}</h2><span class="h3 d-block">
               <del class="text-muted">£{{product.price}}</del>&nbsp; £{{product.discountPrice}}</span>
-            <p class="text-muted">{{product.description}}<a routerLink='#details' class='scroll-to'>More info</a></p>
+            <p class="text-muted">{{product.description}} <a href='#details' class='scroll-to'>More info</a></p>
             <div class="row margin-top-1x">
               <div *ngFor="let eachOption of product.options" class="col-sm-6">
                 <div class="form-group">
@@ -78,7 +78,7 @@
                   </div>
                   <div class="col-sm-8">
                     <div class="pt-4 hidden-sm-up"></div>
-                    <button type="submit" class="btn btn-primary btn-block m-0" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-check-circle" data-toast-title="Product" data-toast-message="Offer Successful!"><i class="icon-bag"></i>Make Offer</button>
+                    <button type="submit" routerLink="/address-page" class="btn btn-primary btn-block m-0" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-check-circle" data-toast-title="Product" data-toast-message="Offer Successful!"><i class="icon-bag"></i>Make Offer</button>
                   </div>
                 </div>
             </form>

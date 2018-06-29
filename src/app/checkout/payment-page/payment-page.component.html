@@ -19,10 +19,10 @@
         <div class="row">
           <!-- Checkout Adress-->
           <div class="col-xl-9 col-lg-8">
-            <div class="steps flex-sm-nowrap mb-5"><a class="step" href="checkout-address.html">
-                <h4 class="step-title"><i class="icon-check-circle"></i>1. Address</h4></a><a class="step" href="checkout-shipping.html">
-                <h4 class="step-title"><i class="icon-check-circle"></i>2. Shipping</h4></a><a class="step active" href="checkout-payment.html">
-                <h4 class="step-title">3. Payment</h4></a><a class="step" href="checkout-review.html">
+            <div class="steps flex-sm-nowrap mb-5"><a class="step" routerLink="/address-page">
+                <h4 class="step-title"><i class="icon-check-circle"></i>1. Address</h4></a><a class="step" routerLink="/shipping-page">
+                <h4 class="step-title"><i class="icon-check-circle"></i>2. Shipping</h4></a><a class="step active" routerLink="/payment-page">
+                <h4 class="step-title">3. Payment</h4></a><a class="step" routerLink="/review-page">
                 <h4 class="step-title">4. Review</h4></a></div>
             <h4>Choose Payment Method</h4>
             <hr class="padding-bottom-1x">
@@ -33,7 +33,7 @@
                 </div>
                 <div class="collapse show" id="card" data-parent="#accordion" role="tabpanel">
                   <div class="card-body">
-                    <p>We accept following credit cards:&nbsp;&nbsp;<img class="d-inline-block align-middle" src="img/credit-cards.png" style="width: 120px;" alt="Cerdit Cards"></p>
+                    <p>We accept following credit cards:&nbsp;&nbsp;<img class="d-inline-block align-middle" src="assets/img/credit-cards.png" style="width: 120px;" alt="Cerdit Cards"></p>
                     <div class="card-wrapper"></div>
                     <form class="interactive-credit-card row">
                       <div class="form-group col-sm-6">
@@ -82,22 +82,11 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#points" data-toggle="collapse"><i class="icon-award"></i>Redeem Reward Points</a></h6>
-                </div>
-                <div class="collapse" id="points" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">
-                    <p>You currently have<span class="text-medium"> 2,549</span> Reward Points to spend.</p>
-                    <div class="custom-control custom-checkbox d-block">
-                      <input class="custom-control-input" type="checkbox" id="use_points">
-                      <label class="custom-control-label" for="use_points">Use my Reward Points to pay for this order.</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="d-flex justify-content-between paddin-top-1x mt-4"><a class="btn btn-outline-secondary" href="checkout-shipping.html"><i class="icon-arrow-left"></i><span class="hidden-xs-down">&nbsp;Back</span></a><a class="btn btn-primary" href="checkout-review.html"><span class="hidden-xs-down">Continue&nbsp;</span><i class="icon-arrow-right"></i></a></div>
+            <div class="d-flex justify-content-between paddin-top-1x mt-4">
+              <a class="btn btn-outline-secondary" routerLink="/shipping-page"><i class="icon-arrow-left"></i><span class="hidden-xs-down">&nbsp;Back</span></a>
+              <a class="btn btn-primary" routerLink="/review-page"><span class="hidden-xs-down">Continue&nbsp;</span><i class="icon-arrow-right"></i></a>
+            </div>
           </div>
           <!-- Sidebar          -->
           <div class="col-xl-3 col-lg-4">
@@ -130,28 +119,28 @@
                 <h3 class="widget-title">Recently Viewed</h3>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/01.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/01.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">GoPro Hero4 Silver</a></h4><span class="entry-meta">$287.99</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/02.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/02.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">Puro Sound Labs BT2200</a></h4><span class="entry-meta">$95.99</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/03.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/03.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">HP OfficeJet Pro 8710</a></h4><span class="entry-meta">$89.70</span>
                   </div>
                 </div>
                 <!-- Entry-->
                 <div class="entry pb-2">
-                  <div class="entry-thumb"><a href="shop-single.html"><img src="img/shop/widget/05.jpg" alt="Product"></a></div>
+                  <div class="entry-thumb"><a href="shop-single.html"><img src="assets/img/shop/widget/05.jpg" alt="Product"></a></div>
                   <div class="entry-content">
                     <h4 class="entry-title"><a href="shop-single.html">iPhone X 256 GB Space Gray</a></h4><span class="entry-meta">$1,450.00</span>
                   </div>
@@ -161,7 +150,7 @@
                 <div class="card-body"><span class="d-block text-lg text-thin mb-2">Limited Time Deals</span>
                   <h3>Surface Pro 4</h3>
                   <p class="d-inline-block bg-warning text-white">&nbsp;&nbsp;Shop Now&nbsp;<i class="icon-chevron-right d-inline-block align-middle"></i>&nbsp;</p>
-                </div><img class="d-block mx-auto" src="img/shop/widget/promo.jpg" alt="Surface Pro"></a>
+                </div><img class="d-block mx-auto" src="assets/img/shop/widget/promo.jpg" alt="Surface Pro"></a>
             </aside>
           </div>
         </div>

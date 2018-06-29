@@ -27,6 +27,8 @@ import { ReviewPageComponent } from './checkout/review-page/review-page.componen
 import { CompletePageComponent } from './checkout/complete-page/complete-page.component';
 import { OwlModule } from 'ngx-owl-carousel';
 import { Four04Component } from './four04/four04.component';
+import { AccountResetComponent } from './account/account-reset/account-reset.component';
+import { TrackingComponent } from './account/tracking/tracking.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,7 @@ import { Four04Component } from './four04/four04.component';
     ShippingPageComponent, 
     PaymentPageComponent, 
     ReviewPageComponent, 
-    CompletePageComponent, Four04Component
+    CompletePageComponent, Four04Component, AccountResetComponent, TrackingComponent
     ],
   imports: [
     OwlModule,
