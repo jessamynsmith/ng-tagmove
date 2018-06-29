@@ -40,7 +40,6 @@ import { Four04Component } from './four04/four04.component';
 const routes: Routes = [
 
   { path: '', component: HomeComponent},
-  { path: '**', component: Four04Component},
 
   { path: 'login', component: SigninComponent},
   { path: 'product-list', component: ProductListComponent},
@@ -56,7 +55,9 @@ const routes: Routes = [
   { path: 'shipping-page', component: ShippingPageComponent},
   { path: 'payment-page', component: PaymentPageComponent},
   { path: 'review-page', component: ReviewPageComponent},
-  { path: 'complete-page', component: CompletePageComponent}
+  { path: 'complete-page', component: CompletePageComponent},
+
+  { path: '**', component: Four04Component}
 ];
 
 // *******************************************************************************
