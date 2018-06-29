@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
 
-  //fix for menu close bug
+  //fix for mobile menu not closing
     $('.mobile-menu-tog').on('click', function(e) {
       $('.mobile-menu-toggle').toggleClass("active");
        $('#icon-menu-toggle').toggleClass("icon-x");
