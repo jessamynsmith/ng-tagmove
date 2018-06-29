@@ -31,6 +31,8 @@ import { ShippingPageComponent } from './checkout/shipping-page/shipping-page.co
 import { PaymentPageComponent } from './checkout/payment-page/payment-page.component';
 import { ReviewPageComponent } from './checkout/review-page/review-page.component';
 import { CompletePageComponent } from './checkout/complete-page/complete-page.component';
+import { Four04Component } from './four04/four04.component';
+
 
 // *******************************************************************************
 // Routes
@@ -38,6 +40,8 @@ import { CompletePageComponent } from './checkout/complete-page/complete-page.co
 const routes: Routes = [
 
   { path: '', component: HomeComponent},
+  { path: '**', component: Four04Component},
+
   { path: 'login', component: SigninComponent},
   { path: 'product-list', component: ProductListComponent},
   { path: 'product-list-alt', component: ProductListAltComponent},

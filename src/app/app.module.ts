@@ -26,6 +26,7 @@ import { PaymentPageComponent } from './checkout/payment-page/payment-page.compo
 import { ReviewPageComponent } from './checkout/review-page/review-page.component';
 import { CompletePageComponent } from './checkout/complete-page/complete-page.component';
 import { OwlModule } from 'ngx-owl-carousel';
+import { Four04Component } from './four04/four04.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { OwlModule } from 'ngx-owl-carousel';
     ShippingPageComponent, 
     PaymentPageComponent, 
     ReviewPageComponent, 
-    CompletePageComponent
+    CompletePageComponent, Four04Component
     ],
   imports: [
     OwlModule,
