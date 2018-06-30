@@ -9,11 +9,8 @@ export interface Product {
     vid: string,
     coverImg: string,
     imgs: object[],
-    option1: {
-      name: string,
-      price: string, 
-    },
-    option2: {
+    options: {
+      group: string,
       name: string,
       price: string, 
     },
