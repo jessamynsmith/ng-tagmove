@@ -25,14 +25,14 @@ export class ProductItemComponent implements OnInit {
 
   setupForm() {
     this.offerForm = this._fb.group({
-      price: ['']
+      price: []
     });
   }
 
   makeOffer() {
-    const offerDetails = this.offerForm.value;
+    const offerDetails = this.offerForm.value
     offerDetails.productID = this.route.snapshot.paramMap.get('id');
-    offerDetails.buyerID = 1234;
+    offerDetails.buyerID = "1234";
     offerDetails.timestamp = new Date();
     console.log(offerDetails);
     this.productService.makeOffer(offerDetails).subscribe(response => {
@@ -40,7 +40,7 @@ export class ProductItemComponent implements OnInit {
     }, (error) => {
       console.log(error);
     })
-    //console.log('form submited')
+    console.log('form submited')
   }
 
 }

@@ -7,6 +7,7 @@ import { Product } from '../models/product';
 export class ProductService {
 
   baseUrl =  'https://private-b19a02-tagmove.apiary-mock.com/api/v1';
+  localUrl = "http://localhost:5000";
 
   constructor(private _http: HttpClient) { }
 
@@ -19,7 +20,7 @@ export class ProductService {
   }
 
   makeOffer(offerDetails): any {
-    return this._http.post(`${this.baseUrl}/offer`, offerDetails);
+    return this._http.post(`${this.localUrl}/offer`, offerDetails);
   }
 
   getOffers(buyerDetails): any {

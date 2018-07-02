@@ -22,37 +22,3 @@ export interface Product {
     },
     relatedProducts: object[]
   }
-
-  // {
-  //   "id": "",
-  //   "categories": [],
-  //   "title": "",
-  //   "price": 0,
-  //   "discountPrice": 0,
-  //   "description": "",
-  //   "offers": 0,
-  //   "vid": "",
-  //   "coverImg": "",
-  //   "imgs": [],
-  //   "option1": [
-  //     {
-  //       "name": "",
-  //       "price": ""
-  //     }
-  //   ],
-  //   "option2": [
-  //     {
-  //       "name": "",
-  //       "price": ""
-  //     }
-  //   ],
-  //   "fullDetails": "",
-  //   "features": [],
-  //   "spec": [
-  //     {
-  //       "name": "",
-  //       "value": ""
-  //     }
-  //   ],
-  //   "relatedProducts": []
-  // }
