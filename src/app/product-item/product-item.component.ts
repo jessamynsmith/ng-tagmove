@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../models/product';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import {OwlCarousel} from 'ngx-owl-carousel';
 
 @Component({
   selector: 'app-product-item',
@@ -12,6 +13,11 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class ProductItemComponent implements OnInit {
   product: Product;
   offerForm: FormGroup;
+  @ViewChild('owlElement') owlElement: OwlCarousel
+
+     goToSlide(target) {
+       this.owlElement.to([target]);
+     }
 
   constructor(private productService: ProductService, private route: ActivatedRoute, private _fb: FormBuilder) { }
 
